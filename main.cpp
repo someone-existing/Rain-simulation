@@ -3,12 +3,12 @@
 const int screenWidth = 1366;
 const int screenHeight = 768;
 const int maxRain = 200;
-typedef struct Rain
+struct Rain
 {
     Rectangle rect;
     int speed;
     Color color;
-} Rain;
+};
 static Rain rain[maxRain];
 void InitRain(){
     for (int i = 0; i < maxRain; i++){
